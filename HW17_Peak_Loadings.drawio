@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.1">
+  <diagram id="Q6TESt2uFMSqSwzFEea5" name="Page-1">
+    <mxGraphModel dx="1242" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Client" value="Client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="50" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="API Gateway / Load Balancer" value="API Gateway / Load Balancer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="200" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Read API" value="Read API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="425" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Write API" value="Write API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="425" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Match Events Listener" value="Match Events Listener" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="425" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WebSocket Cluster Servers" value="WebSocket Cluster Servers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="425" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Media Service Cluster" value="Media Service Cluster" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="410" y="30" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="News Feed Service" value="News Feed Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="600" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Fan out Service" value="Fan out Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="600" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Live Matches Service" value="Live Matches Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="760" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Data Access Layer" value="Data Access Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="800" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NoSQL Read Replica DB" value="NoSQL Read Replica DB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="70" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NoSQL Master DB" value="NoSQL Master DB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Real-Time Data Store" value="Real-Time Data Store" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="290" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cache Layer" value="Cache Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="380" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Message Queue" value="Message Queue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue;strokeColor=black;" parent="1" vertex="1">
+          <mxGeometry x="660" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Client-API Gateway / Load Balancer" parent="1" source="Client" target="API Gateway / Load Balancer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="API Gateway / Load Balancer-Read API" style="entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="API Gateway / Load Balancer" target="Read API" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="API Gateway / Load Balancer-Write API" parent="1" source="API Gateway / Load Balancer" target="Write API" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="API Gateway / Load Balancer-Match Events Listener" style="entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="API Gateway / Load Balancer" target="Match Events Listener" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="API Gateway / Load Balancer-WebSocket Cluster Servers" style="entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="API Gateway / Load Balancer" target="WebSocket Cluster Servers" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="474" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="API Gateway / Load Balancer-Media Service Cluster" style="entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="API Gateway / Load Balancer" target="Media Service Cluster" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Read API-News Feed Service" parent="1" source="Read API" target="News Feed Service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Write API-Fan out Service" parent="1" source="Write API" target="Fan out Service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Match Events Listener-Live Matches Service" parent="1" source="Match Events Listener" target="Live Matches Service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fan out Service-Data Access Layer" parent="1" source="Fan out Service" target="Data Access Layer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Live Matches Service-Data Access Layer" parent="1" source="Live Matches Service" target="Data Access Layer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="News Feed Service-Data Access Layer" style="entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="News Feed Service" target="Data Access Layer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Data Access Layer-NoSQL Read Replica DB" style="entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Data Access Layer" target="NoSQL Read Replica DB" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Data Access Layer-NoSQL Master DB" parent="1" source="Data Access Layer" target="NoSQL Master DB" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Data Access Layer-Real-Time Data Store" style="entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Data Access Layer" target="Real-Time Data Store" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Data Access Layer-Cache Layer" style="entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Data Access Layer" target="Cache Layer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Write API-Message Queue" style="entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Write API" target="Message Queue" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Message Queue-Data Access Layer" style="entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Message Queue" target="Data Access Layer" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
